@@ -3,10 +3,10 @@ import os
 import openai
 import pandas as pd
 from dotenv import load_dotenv
-from tqdm import tqdm
-
 from kedro.framework.project import configure_project
 from kedro.framework.session import KedroSession
+from tqdm import tqdm
+
 from movie_review_classifier import settings
 
 configure_project(settings.BASE_PATH)
