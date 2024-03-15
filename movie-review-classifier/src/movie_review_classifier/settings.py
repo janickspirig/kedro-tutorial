@@ -17,7 +17,7 @@ https://kedro.readthedocs.io/en/stable/kedro_project_setup/settings.html."""
 #     "path": "./sessions"
 # }
 
-BASE_PATH = "review_classifier"
+BASE_PATH = "movie_review_classifier"
 
 # Directory that holds configuration.
 CONF_SOURCE = "conf"
