@@ -1,0 +1,12 @@
+openai:
+  system_message: |2
+    You are a helpful AI assistant that classifies movie reviews as positive or negative.
+  human_message: |2
+    Given the following movie review, classify it as positive or negative.
+    Only output the text 'positive' if the review is positive or 'negative' if the review is negative.
+
+    Movie review:
+    {movie_review}
+  kwargs:
+    model: gpt-3.5-turbo-0125
+    temperature: 0.01

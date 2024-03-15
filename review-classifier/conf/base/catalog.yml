@@ -1,0 +1,20 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+_pandas_csv_dataset: &pandas_csv_dataset
+  type: pandas.CSVDataset
+  load_args:
+    sep: ","
+
+_json_dataset: &json_dataset
+  type: json.JSONDataset
+
+movie_reviews:
+  <<: *pandas_csv_dataset
+  filepath: "data/01_raw/movie_reviews.csv"
+
+sentiment_predictions:
+  <<: *json_dataset
+  filepath: "data/02_model_output/sentiment_predictions.json"
